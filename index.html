@@ -72,6 +72,14 @@ body {
 .header-right {
   float: right;
 }
+.x{
+  font-size: 6w;
+}
+@media screen and (min-width: 1200px) {
+  .x {
+     font-size: 36px;
+  }
+}
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -86,17 +94,14 @@ body {
 </head>
 <body>
 <div class="header">
-  <a href="#default" class="logo"><h1 style = "font-size:6.5vw">Wishes for family & friends</h1></a>
+  <a href="#default" class="logo"><h1 class="x">Wishes for family & friends</h1></a>
 </div>
 
 <iframe style="width:100%;padding-left:5px;padding-right:5px" src="https://cards.producthunt.com/cards/posts/165463?v=1" height="490" frameborder="0" scrolling="no" allowfullscreen>
 </iframe>
-<a href="wish.apk"><button class="btn" style="width:100%;font-size:6vw"><i class="fa fa-download"></i> Download</button></a>
+<a href="wish.apk"><button class="btn" style="width:100%"class="x"><i class="fa fa-download"></i> Download</button></a>
    <div class="sharethis-inline-share-buttons" style="padding-top:10px"></div>
 
 <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5d6185210887cc0012331475&product=social-ab' async='async'></script>
 </body>
 </html>
-
-
-
