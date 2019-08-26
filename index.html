@@ -29,8 +29,9 @@
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+@import url(https://fonts.googleapis.com/css?family=Changa+One&effect=anaglyph);
 .btn {
-  background-color: red;
+  background-color: black;
   border: none;
   color: white;
   padding: 12px 30px;
@@ -48,12 +49,12 @@ body {
 }
 .header {
   overflow: hidden;
-  background-color: #db3232;
+  background-color: #00000000;
   padding: 0px 10px;
 }
 .header a {
   float: left;
-  color: white;
+  color: black;
   text-align: center;
   padding: 0px;
   text-decoration: none;
@@ -64,21 +65,31 @@ body {
 .header a.logo {
   font-size: 15px;
   font-weight: bold;
-
 }
 .header a.active {
-  background-color: dodgerblue;
+  background-color: red;
   color: white;
 }
 .header-right {
   float: right;
 }
-.x{
-  font-size: 6w;
-}
+
+h1.font-effect-anaglyph {
+		font-family: 'Changa One', cursive;
+		font-size: 6vw;
+		text-align: left;
+		letter-spacing: 3px;
+	}
 @media screen and (min-width: 1200px) {
-  .x {
-     font-size: 36px;
+  h1.font-effect-anaglyph {
+		font-size: 72px;
+	} 
+  }
+}
+@media screen and (max-width: 413px) {
+  h1.font-effect-anaglyph {
+		line-height: 25px;
+	} 
   }
 }
 @media screen and (max-width: 500px) {
@@ -95,7 +106,7 @@ body {
 </head>
 <body>
 <div class="header">
-  <a href="#default" class="logo"><h1 class="x">Wishes for family & friends</h1></a>
+  <a href="#default" class="logo"><h1 class="font-effect-anaglyph">Wishes for family & friends</h1></a>
 </div>
 
 <iframe style="width:100%;padding-left:5px;padding-right:5px" src="https://cards.producthunt.com/cards/posts/165463?v=1" height="490" frameborder="0" scrolling="no" allowfullscreen>
